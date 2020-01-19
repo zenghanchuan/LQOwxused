@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/explain/explain",
+    "pages/test/index",
+    "pages/riding/riding",
+    "pages/rentCar/rentCar",
+    "pages/pay/pay",
+    "pages/successRecord/successRecord",
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/check/check",
+    "pages/toPay/toPay",
+    "pages/compensate/compensate",
+    "pages/myAssets/myAssets",
+    "pages/waitRecord/waitRecord",
+    "pages/myIncome/myIncome",
+    "pages/administrators/administrators",
+    "pages/myRecord/myRecord",
+    "pages/admin/admin",
+    "pages/vehicleAndManage/vehicleAndManage",
+    "pages/confirmUnlock/confirmUnlock",
+    "pages/carPark/carPark",
+    "pages/vehicleList/vehicleList",
+    "conponents/riding/bikeScanBtn/index",
+    "pages/rideEnd/rideEnd",
+    "pages/gainRecording/gainRecording",
+    "pages/bikeInfo/bikeInfo",
+    "conponents/explain/legalDocument/index",
+    "pages/agreement/agreement"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wxde8ac0a21135c07d",
+    "wx760bd8330303995c",
+    "wxece3a9a4c82f58c9",
+    "wxaf35009675aa0b2a"
+  ]
+}

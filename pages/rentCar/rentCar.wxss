@@ -1,0 +1,176 @@
+.mapBox{
+  width: 750rpx;
+  height: 100vh;
+  position: relative;
+}
+map{
+  width: 750rpx;
+  height: 100vh;
+}
+mapCoverButton{
+  position: absolute;
+  left: 50%;
+  bottom: 98rpx;
+  transform: translateX(-50%);
+}
+mapCoverIcon{
+  position: absolute;
+  left: 30rpx;
+  bottom: 229rpx;
+  z-index: 1；
+}
+
+.mapCoverButton{
+  width: 526rpx;
+  height: 88rpx;
+  background-color: #37aa4a;
+  border-radius: 44rpx;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 26rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 98rpx;
+  transform: translateX(-50%);
+}
+.scanIcon{
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  left: 30%;
+}
+.scanText{
+  width:100%;
+  height:100%;
+}
+.scanText button{
+  color:white;
+  background-color:rgba(255,255,255,0);
+  font-size:26rpx;
+  width:100%;
+  height:100%;
+  line-height:88rpx;
+}
+
+/* 弹框 */
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  /* z-index: 9000; */
+  color: #fff;
+}
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /* z-index: 50; */
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 20rpx 0;
+}
+.modal-content{
+  height: 65rpx;
+  /* line-height: 50rpx; */
+  text-align: center;
+  color: #999;
+}
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+.btn-cancel {
+  width: 50%;
+  text-align: center;
+  border-right: 1px solid #dedede;
+  position: relative;
+}
+.btn-cancel button , .btn-confirm button{
+  width: 100%;
+  height: 65rpx;
+  line-height: 65rpx;
+  font-size: 34rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 0;
+}
+.btn-confirm button{
+  color: #37aa4a;
+}
+.btn-confirm {
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+/* 跳转按钮 */
+.jumpTo{
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 259rpx;
+  right: 30rpx;
+}
+.jumpImg, .jumpSelect{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.jumpModal{
+  width: 263rpx;
+  height: 497rpx;
+  border-radius: 10rpx;
+  position: absolute;
+  bottom: 357rpx;
+  right: 30rpx;
+}
+.selectList{
+  width: 100%;
+  height: 118rpx;
+  position: relative;
+}
+.listBorder{
+  width:260rpx;
+  height:3rpx;
+  background:#f7f7f7;
+  margin: 0 auto;
+}
+.listImg{
+  width: 54rpx;
+  position: absolute;
+  right:28rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.selectList cover-view{
+  font-size: 31rpx;
+  line-height: 118rpx;
+  color: rgb(102,102,102);
+  position: absolute;
+  right: 101rpx;
+}

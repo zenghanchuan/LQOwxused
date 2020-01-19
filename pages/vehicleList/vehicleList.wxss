@@ -1,0 +1,64 @@
+/* pages/vehicleList/vehicleList.wxss */
+.main .address{
+  font-size: 32rpx;
+  color: #000000;
+  display: block;
+  text-align: center;
+  margin: 9rpx 0 0 0;
+}
+.main .tips{
+  font-size: 25rpx;
+  color: #000000;
+  display: block;
+  text-align: center;
+  margin: 0 0 70rpx 0;
+}
+.list > view:first-child{
+  margin: 0 auto;
+}
+.list > view{
+  width: 85%;
+  height: 54rpx;
+  position: relative;
+  margin: 33rpx auto 0 auto;
+}
+.list > view > image{
+  width: 54rpx;
+  height: 54rpx;
+  float: left;
+}
+.list > view > text{
+  font-size: 26rpx;
+  color: #000000;
+  height: 100%;
+  line-height: 54rpx;
+  display: block;
+  float: left;
+  margin: 0 20rpx 0 0;
+}
+.list .num{
+  margin: 0 20rpx 0 0;
+  font-size: 32rpx;
+  color: #535353;
+}
+.list .hide{
+  display: none;
+}
+.list .color{
+  color: #37aa4a;
+}
+.info{
+  font-size:32rpx;
+  text-align: center;
+}
+.list .check_color{
+  color: #00a0e9;
+}
+.list .check_location{
+  position: absolute;
+  left: 210rpx;
+  top: 54rpx;
+}
+.list .check_view{
+  height: 108rpx;
+}

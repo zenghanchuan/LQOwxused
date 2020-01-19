@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "myButton": "/conponents/currency/myButton/index"
+  }
+}

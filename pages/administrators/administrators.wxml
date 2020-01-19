@@ -1,0 +1,83 @@
+<view>
+  <text class='carTest'>车辆信息</text>
+  <view class='content'>
+    <text class='lqo'>{{equid}}</text>
+    <view class='message'>
+      <!-- <text wx:if="{{flag}}">剩余电量:{{electric}}%</text> -->
+      <text>剩余电量:{{electric}}%</text>
+      <text>开锁地点:{{addres}}</text>
+      <text>当前时间:{{time}}</text>
+      <text>开锁时间:{{timed}}</text>
+    </view>
+  </view>
+  
+  <button wx:if="{{flag}}" class='operation {{current_item === index?"selected":""}}' wx:for='{{operationMessage}}' wx:key='{{index}}' data-index='{{index}}' bindtap='change'>{{item.text}}</button>
+
+  <button wx:if="{{!flag}}" class='operation {{zlccurrent === index?"selected":""}}' wx:for='{{zlcoperationMessage}}' wx:key='{{index}}' data-index='{{index}}' bindtap='zlcChange'>{{item.text}}</button>
+
+</view>
+
+<view class='bot'>
+  <image class='logo' src='/assets/images/mineLogo.png'></image>
+</view>
+
+<!-- 有订单 退款框 -->
+<modal class='information' hidden="{{hiddenmodalput}}" title="退款框" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+  <view>
+    <image class='headPortrait' src='{{image}}'></image>
+    <text class='nickName'>{{nickName}}</text>
+    <text class='phoneNumber'>{{phone}}</text>
+  </view>  
+
+  <view class='inpMoney'>
+    <label>￥</label>
+    <input type='number' placeholder='请输入退款金额' placeholder-class="placeholderStyle" bindinput='formValue' value='{{money}}'></input>
+  </view>
+</modal>
+
+<!-- 无订单 退款框 输入商户单号 -->
+<!-- <modal class='noOrderInfo' hidden="{{mark}}" title="退款框" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+  <input type='number' class="orderNum" placeholder="请输入正确商户单号" bindinput='formOrderNum' value='{{orderNum}}'/>
+  <view class='inpMoney'>
+    <label>￥</label>
+    <input type='number' placeholder='请输入退款金额' placeholder-class="placeholderStyle" bindinput='formValue' value='{{money}}'></input>
+  </view>
+</modal> -->
+
+<!-- 退款方式 -->
+<!-- <modal class='refundMethod' hidden="{{method}}" title="退款方式" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirmMethod">
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}" wx:key=''>
+      <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+  </radio-group>
+</modal> -->
+
+<!-- 输入车辆编号 -->
+<modal class='bikeNumInfo' hidden="{{mark}}" title="退款框" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+
+  <view class="section">
+    <picker bindchange="bindPickerState" value="{{ind}}" range="{{type}}">
+      <view class="picker">
+        请选择车辆类型：{{type[ind]}}
+      </view>
+      <image src='/assets/images/down.png'></image>
+    </picker>
+  </view>
+
+  <input type='number' class="bikeNum" placeholder="请输入正确车辆编号 例:000067" bindinput='formbikeNum' value='{{bikeNum}}'/>
+
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        请选择退款对象：{{array[index]}}
+      </view>
+      <image src='/assets/images/down.png'></image>
+    </picker>
+  </view>
+
+  <view class='inpMoney'>
+    <label>￥</label>
+    <input type='number' placeholder='请输入退款金额' placeholder-class="placeholderStyle" bindinput='formValue' value='{{money}}'></input>
+  </view>
+</modal>

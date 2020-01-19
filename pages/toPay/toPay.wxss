@@ -1,0 +1,9 @@
+/* pages/toPay/toPay.wxss */
+@import "../../conponents/currency/myButton/index.wxss";
+.main{
+  padding: 0 99rpx;
+}
+
+.myButton{
+  margin-top: 67rpx;
+}

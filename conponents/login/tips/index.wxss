@@ -1,0 +1,28 @@
+.tips{
+  box-sizing: border-box;
+  padding-left: 24rpx;
+  width: 750rpx;
+  height: auto;
+}
+.tipsTitle{
+  color: rgba(50, 50, 50);
+  font-size: 32rpx;
+  display: block;
+  height: 68rpx;
+}
+.tipsIcon{
+  display: inline-block;
+  width: 24rpx;
+  height: 24rpx;
+  background-color: #37aa4a;
+  border-radius: 50%;
+  margin-right: 12rpx;
+  color: #fff;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 24rpx;
+}
+.tipSafe{
+  font-size: 24rpx;
+  color: rgba(50, 50, 50);
+}

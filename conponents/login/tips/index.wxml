@@ -1,0 +1,7 @@
+<view class='tips'>
+  <text class='tipsTitle'>用户保险缴纳</text>
+  <view>
+    <text class='tipsIcon'>!</text>
+    <text class='tipSafe'>为了您的资金安全，请留下手机号</text>
+  </view>
+</view>

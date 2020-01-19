@@ -1,0 +1,164 @@
+
+.carTest{
+  position:relative;
+  font-weight: bold;
+  margin: 33rpx 0 0 99rpx;
+  top: 33rpx;
+}
+.content{
+  width: 85%;
+  position: relative;
+  background: #37aa4a;
+  color: white;
+  margin: 25rpx 0 0 10%;
+  top: 25rpx;
+  border-radius: 12rpx;
+}
+.lqo{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 96rpx;
+  line-height: 96rpx;
+}
+.message{
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  bottom: 10rpx;
+  overflow: hidden;
+}
+.message text{
+  display: inline-block;
+  height: 65rpx;
+  position: relative;
+  font-size: 14px;
+}
+.message text:nth-child(odd){
+  width: 51%;
+}
+.message text:nth-child(even){
+  width: 49%;
+  text-align: right;
+}
+.operation{
+  width: 80%;
+  position: relative;
+  margin: 0 0 0 10%;
+  top: 85rpx;
+  height: 88rpx;
+  background: #c7c7c7;
+  color: #595959;
+  line-height: 88rpx;
+  text-align: center;
+  border-radius: 41rpx;
+  border: 1px solid  #c7c7c7;
+  margin-top: 32rpx;
+}
+.selected{
+  background: #37aa4a;
+}
+.bot{
+  display:flex;
+  justify-content: center;
+}
+.logo{
+  width:340rpx;
+  height:86rpx;
+  position:relative;
+  margin:40% 0 0 0;
+  /* top:130rpx; */
+}
+.information view{
+  width: 58%;
+  height: 90rpx;
+  position: relative;
+  margin: 10px auto;
+  color: black;
+}
+.information .headPortrait{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 15rpx;
+  position: absolute;
+}
+.information .nickName{
+  font-size: 26rpx;
+  font-family: PingFang-SC-Blod;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+.information .phoneNumber{
+  font-size: 26rpx;
+  font-family: PingFang-SC-Blod;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.noOrderInfo .orderNum, .bikeNumInfo .bikeNum{
+  color: black;
+  margin: 20rpx auto 0 auto;
+  border-bottom: 1px solid #ccc;
+}
+.inpMoney{
+  font-weight: bold;
+  font-family: PingFang-SC-Bold;
+  height: 85rpx;
+  border-bottom:1px solid #ccc;
+  margin-top:20rpx;
+  color: black;
+}
+.inpMoney > label{
+  float: left;
+  height:80rpx;
+  line-height:80rpx;
+}
+.inpMoney > input{
+  font-size: 25px;
+  margin: 0 0 0 55rpx;
+  height: 80rpx;
+}
+.placeholderStyle{
+  font-size: 30rpx;
+  font-weight: normal;
+}
+/* 退款方式 */
+.refundMethod radio-group{
+  width: 100%;
+  height: 150rpx;
+  position: relative;
+}
+.refundMethod radio-group > label{
+  width: 60%;
+  height: 65rpx;
+  display: block;
+  margin: 0 auto;
+  line-height: 65rpx;
+}
+.refundMethod radio-group > label:last-child{
+  margin: 20rpx auto 0 auto;
+}
+/* 输入车辆编号退款 */
+.bikeNumInfo > .section{
+  height: 80rpx;
+  position: relative;
+  background: rgb(246, 246, 246);
+}
+.section picker{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 20rpx;
+}
+.section .picker{
+  /* margin: 0 10rpx 0 20rpx; */
+  float: left;
+}
+.section image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-top: 17rpx;
+  margin-left: 20rpx;
+}

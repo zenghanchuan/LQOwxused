@@ -1,0 +1,72 @@
+/* pages/pay/pay.wxss */
+@import "../../conponents/currency/myButton/index.wxss";
+
+.main {
+  padding: 0 97rpx;
+  font-family: PingFang-SC-Bold;
+}
+
+.main .first {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  color: rgb(0, 0, 0);
+}
+
+.main .zero {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  margin: 60rpx 0 30rpx 0;
+  color: rgb(0, 0, 0);
+}
+
+.main  .money {
+  color: rgb(55, 170, 74);
+}
+
+.main .second {
+  font-size: 32rpx;
+  margin-top: 16rpx;
+  color: rgb(0, 0, 0);
+}
+
+.myButton {
+  margin: 65rpx 0 65rpx 0;
+}
+.tips icon{
+  margin-left: -10rpx; 
+}
+.tipsTitle {
+  display: block;
+  margin: -40rpx 0 0 35rpx;
+}
+
+.tips {
+  font-size: 24rpx;
+  color: rgb(50, 50, 50);
+}
+
+.tips1 {
+  display: block;
+  text-indent: 35rpx;
+  margin-top: 17rpx;
+}
+
+.tips2 {
+  display: block;
+  text-indent: 35rpx;
+  margin-top: 18rpx;
+}
+
+.tips2_2 {
+  display: block;
+  text-indent: 35rpx;
+  margin: 17rpx 0 0 20rpx;
+}
+
+.tips3 {
+  display: block;
+  text-indent: 35rpx;
+  margin-top: 18rpx;
+}

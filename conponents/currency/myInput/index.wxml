@@ -1,0 +1,8 @@
+<input 
+  class='my-input'
+  placeholder="{{inputInfo}}"
+  maxlength="{{inputLength}}"
+  value='{{phoneText}}'
+  bindinput='input'
+  focus='{{ifFocus}}'
+/>

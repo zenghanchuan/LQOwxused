@@ -1,0 +1,35 @@
+/* pages/agreement/agreement.wxss */
+.main{
+  width: 690rpx;
+  height: 100%;
+  margin: auto;
+}
+.main > text{
+  font-size: 26rpx;
+  font-weight: bold;
+  line-height: 26rpx;
+  margin-bottom: 30rpx;
+  display: block;
+}
+.main > view{
+  font-size: 22rpx;
+  line-height: 32rpx;
+}
+.main > view > text{
+  display: block;
+}
+.indent{
+  text-indent: 2em;
+}
+.marTop{
+  margin-top: 15rpx;
+}
+.marRig{
+  margin-right: 15rpx;
+}
+.marBot{
+  margin-bottom: 30rpx;
+}
+.fontWei{
+  font-weight: bold;
+}

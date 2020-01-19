@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tips": "/conponents/login/tips/index"
+  },
+  "navigationBarTitleText": "来骑哦租车"
+}

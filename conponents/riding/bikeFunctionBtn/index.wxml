@@ -1,0 +1,5 @@
+<cover-view class='bikeFunctionBtn {{comment == 1 ? "zlcBike" : "ddcBike"}} ' catchtap='returnBike'>
+  <cover-view class='bikeStatus'>
+    <cover-view>{{bikeStatus}}</cover-view>
+  </cover-view>
+</cover-view>

@@ -1,0 +1,7 @@
+.scenicName{
+  height: 58rpx;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  font-size: 32rpx;
+  color: rgba(50, 50, 50);
+}

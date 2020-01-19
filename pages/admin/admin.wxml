@@ -1,0 +1,5 @@
+<!--pages/admin/admin.wxml-->
+<view class='main'>
+  <view bindtap='carManage'>车辆与管理</view>
+  <view bindtap='scan'>还车与赔偿</view>
+</view>

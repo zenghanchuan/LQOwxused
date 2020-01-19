@@ -1,0 +1,22 @@
+<!--pages/pay/pay.wxml-->
+<view class='main'>
+   <view class='zero'>
+   <text>您选择了{{tcShouciSj}}小时套餐</text>
+   <text class='money'> {{tcShouciFk}}元</text>
+   </view>
+  <view class='first'>
+    <text>需支付预授权</text>
+    <text class='money'>{{num}}元</text>
+  </view>
+  <view class='second'>(还车结算后，余额即时退回)</view>
+  <button class="myButton" bindtap = "pay" disabled = "{{disabled}}">
+    立即支付 立即骑行
+  </button>
+  <view class='tips'>
+  <icon type="warn" size="16" color="rgb(55,170,74)"/><text class='tipsTitle'>友情提示：</text>
+  <text class='tips1'>1.本地区实行<text style='color:#37aa4a'>定点还车</text>，查看附近租赁点；</text>
+  <text class='tips2'>2.套餐超时5分钟以内还车免费；</text>
+  <text class='tips2_2'>套餐超时5分钟后按15元/60分钟计费；</text>
+  <text class='tips3'>3.每60分钟最多收取30元。</text>
+  </view>
+</view>

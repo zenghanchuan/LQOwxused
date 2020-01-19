@@ -1,0 +1,17 @@
+<!--pages/myRecord/myRecord.wxml-->
+<view class='main'>
+  <view class='menu' wx:for='{{record}}' wx:key='{{index}}' data-index='{{index}}'>
+    <view class='left'>
+      <text class='t1'>开始时间: {{item.orderStartTime}}</text>
+      <text class='t2'>车辆编号: {{item.bikeId}}  |  骑行时间: {{time[index]}}</text>
+      <text class='t2 compensate' wx:if="{{repairList[index]}}">
+        <text>赔偿项目：{{repairList[index].repairType}}</text>
+        <text>赔偿金额：{{repairList[index].price}}元</text>
+      </text>
+    </view>
+    <view class='right'>
+      <text>{{item.totalPrice}}元</text>
+    </view>
+  </view>
+  <text class='t3'>{{msg}}</text>
+</view>

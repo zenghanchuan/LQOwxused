@@ -1,0 +1,38 @@
+<!--pages/myAssets/myAssets.wxml-->
+<view class='main'>
+
+  <!-- <view class='noIncome' wx:if='{{show}}'>
+    <image src='/assets/images/bike_income.png'></image>
+    <view class='no_income'>
+      <image class='background' src='/assets/images/6.png'></image>
+      <text class='text_income'>您目前拥有{{num}}辆车，暂没有产生收益</text>
+    </view>
+  </view>
+
+  <map wx:if='{{!show}}'
+    id='myMap'
+    longitude='{{longitude}}'
+    latitude='{{latitude}}'
+    markers='{{markers}}'
+    show-location="{{showLocation}}"
+    enable-zoom = "{{enableZoom}}"
+  >
+    <view class='income'>
+      <image class='background' src='/assets/images/6.png'></image>
+      <text class='text_income'>
+        <text>您目前拥有{{num}}辆车,</text>
+        <text>其中{{m}}辆车正在产生收益</text>
+      </text>
+    </view>
+    <button bindtap="bickInfo">车辆详情</button>
+  </map> -->
+
+  <view class='noIncome'>
+    <image src='/assets/images/bike_income.png'></image>
+    <view class='no_income'>
+      <image class='background' src='/assets/images/6.png'></image>
+      <text class='text_income'>您目前拥有{{num}}辆车</text>
+    </view>
+  </view>
+
+</view>

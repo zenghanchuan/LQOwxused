@@ -1,0 +1,65 @@
+.login{
+  display: flex;
+  flex-direction: column;
+}
+tips{
+  margin-bottom: 50rpx;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .phoneNum{
+  color: rgba(50, 50, 50);
+  font-size: 24rpx;
+  margin-bottom: 30rpx;
+  box-sizing: border-box;
+  padding-left: 142rpx;
+} */
+.myInput{
+  margin-bottom: 47rpx;
+  border: 1px solid #666;
+  border-radius: 20px;
+  width: 60%;
+  height: 88rpx;
+  font-size: 16px;
+  padding: 0 5%;
+}
+.signIn{
+  position: relative;
+  border: 1px solid #37aa4a;
+  border-radius: 20px;
+  background: #37aa4a;
+  width: 70%;
+  height: 88rpx;
+  font-size: 16px;
+  color: white;
+  margin-top:120rpx;
+}
+.verification{
+  position: relative;
+  width: 45%;
+  font-size: 16px;
+  /* border: 1px solid #37aa4a; */
+  border-radius: 10rpx;
+  margin:20rpx 0 0 35rpx;
+}
+.sendOut{
+  position: relative;
+  width: 44%;
+  font-size: 30rpx;
+  margin:-61rpx 20rpx 0 0;
+  float: right;
+  background:#fff;
+  line-height:77rpx;
+}
+.point{
+  display:block;
+  width:70%;
+  height:88rpx;
+  border:1px solid #666;
+  border-radius:20px;
+  position: relative;
+}

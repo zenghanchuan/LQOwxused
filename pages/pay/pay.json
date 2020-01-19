@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "预授权",
+  "usingComponents": {
+    "myButton": "/conponents/currency/myButton/index"
+  }
+}

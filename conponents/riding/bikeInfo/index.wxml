@@ -1,0 +1,13 @@
+<cover-view class='bikeInfo'>
+  <cover-view class='bikeName'>{{defaultCode}}</cover-view>
+  <cover-view class="bikeDetail {{defaultStatus == '1'? '' : 'bikeTime'}}">
+    <!-- <cover-view class='bikeDetailTop'>
+      <cover-view class='Battery'>剩余电量：{{Battery}}%</cover-view>
+      <cover-view class='Bluetooth'>蓝牙未连接</cover-view>
+    </cover-view> -->
+    <cover-view class='bikeDetailBotton'>
+      <cover-view class='readyUse'>已使用：{{time}}</cover-view>
+      <cover-view class='rideCost' wx:if="{{flag}}" >{{tcShouciSj}}小时后 单价￥{{tcDanjia}}</cover-view>
+    </cover-view>
+  </cover-view>
+</cover-view>

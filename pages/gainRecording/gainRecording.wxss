@@ -1,0 +1,52 @@
+/* pages/gainRecording/gainRecording.wxss */
+.main > .section{
+  height: 80rpx;
+  position: relative;
+  background: rgb(246, 246, 246);
+}
+.header{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.picker{
+  margin: 0 10rpx 0 20rpx;
+  float: left;
+}
+.section image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-top: 11rpx;
+}
+/* 表格 */
+table {
+  border: 0px solid darkgray;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 80rpx;
+  align-items: center;
+  font-size:30rpx;
+  font-family: PingFang-SC-Bold;
+}
+.td {
+  justify-content: center;
+  text-align: center;
+  width: 20%;
+}
+.bg-w{
+  background: rgb(55, 170, 74);
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.th {
+  height: 100%;
+  justify-content: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 20%;
+}

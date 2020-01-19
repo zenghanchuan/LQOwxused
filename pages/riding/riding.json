@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "mapCoverIcon": "/conponents/rentCar/mapCoverIcon/index",
+    "bikeInfo": "/conponents/riding/bikeInfo/index",
+    "bikeFunctionBtn": "/conponents/riding/bikeFunctionBtn/index",
+    "bikeScanBtn": "/conponents/riding/bikeScanBtn/index"
+  },
+  "navigationBarTitleText": "租车中"
+}

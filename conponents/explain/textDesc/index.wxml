@@ -1,0 +1,9 @@
+<view class='textDescTitle'>
+  <text class='titleIcon'>!</text>
+  <text class='postageTitle'>资费说明：</text>
+</view>
+<view class='textDescItem'>
+  <view>1.该资费为单次行程计费，还车后再租车将<text>重新计费</text></view>
+  <view>2.该资费仅在<text>{{nearSpot}}</text>有效</view>
+  <view>3.不同时段资费会有调整，<text>以租车时显示的为准</text></view>
+</view>

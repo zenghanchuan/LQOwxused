@@ -1,0 +1,6 @@
+<!--conponents/riding/bikeScanBtn/index.wxml-->
+<cover-view class='bikeScanBtn' catchtap='scanCode'>
+  <cover-view class='bikeScan'>
+    <cover-view>{{bikeScan}}</cover-view>
+  </cover-view>
+</cover-view>

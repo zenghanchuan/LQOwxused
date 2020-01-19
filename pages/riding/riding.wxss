@@ -1,0 +1,25 @@
+.riding{
+  position: relative;
+  width: 750rpx;
+  height: 100vh;
+}
+map{
+  position: absolute;
+  width: 750rpx;
+  height: 100vh;
+}
+mapCoverIcon{
+  position: absolute;
+  left: 30rpx;
+  bottom: 229rpx;
+}
+.functionBtn{
+  width:315rpx;
+}
+.footer{
+  position:absolute;
+  width:690rpx;
+  height:88rpx;
+  left:30rpx;
+  bottom:90rpx;
+}

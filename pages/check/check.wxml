@@ -1,0 +1,34 @@
+<!--pages/check/check.wxml-->
+<view class='number'>{{code}}</view>
+<view class='information {{sign == 1 ? "hide" : "" }} '>
+  <text>剩余电量：{{electricQuantity}}</text>
+  <text>预估续航：{{endurance}}</text>
+</view>
+<view class='title'>请选择套餐</view>
+<view class='menuu'>
+
+  <view class='menuuContont' wx:for='{{setMeal}}' wx:key='{{index}}' data-index='{{index}}' bindtap='selection' id='menuuContont'>
+    <text class='lnitials'>{{item.tcShouciSj}}</text>
+    <text class='txt'>小时起租￥{{item.tcShouciFk}}  之后每{{item.zhouqi}}分钟￥{{item.tcDanjia}}</text>
+  </view>
+
+  <view class='warning'>
+    <block>
+      <icon bindtap='checked' type="success" size="12" color="{{agree?'#37aa4a':'#e0e0e0'}}" />
+      <text>我同意该<text style='color:#37aa4a'>租车协议</text>和<text style='color:#37aa4a'>法律文档</text></text>
+    </block>
+  </view>
+
+  <view class='warning'>
+    <block>
+      <icon bindtap='insurance' type="success" size="12" color="{{flag?'#37aa4a':'#e0e0e0'}}" />
+      <text>我同意<text style='color:#37aa4a'>购买保险</text></text>
+    </block>
+  </view>
+
+  <view class='warning'>
+    <image src='/assets/images/warning.png'></image>
+    <text>1.租车即表示您同意<text style='color:#37aa4a'>租车安全协议</text></text>
+  </view>
+
+</view>

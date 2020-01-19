@@ -1,0 +1,31 @@
+<!--pages/rideEnd/rideEnd.wxml-->
+<view class='main'>
+  <image src='/assets/images/rideEnd.png'></image>
+
+  <view class='rideInfo'>
+    <text class='fontColor'>骑行说明：</text>
+
+    <view wx:if="{{!timeState}}">
+      <view>您在骑行中花费的金额为<label class='fontColor'>{{order.orderPrice}}</label>元</view>
+      <view wx:if="{{order.diffAreaPrice!=null}}">，异地停车费为<label class='fontColor'>{{order.diffAreaPrice}}</label>元</view>。
+    </view>
+
+    <view wx:if="{{timeState}}">
+      <view>您的骑行时间在15分钟以内，未到达车辆使用套餐时间，将不产生套餐费用</view>
+      <view class='' wx:if="{{order.diffAreaPrice!=null}}">，由于您异地停车，产生<label class='fontColor'>{{order.diffAreaPrice}}</label>元费用</view>。
+    </view>
+  </view>
+
+  <view class='compensateInfo' wx:if="{{repairPrice != 'null'}}">
+    <text class='fontColor'>赔偿说明：</text>
+
+    <view>您在骑行过程中损坏了<label class='fontColor'>{{repairType}}</label>部分，已和管理员确认损坏部分相应的赔偿金额为<label class='fontColor'>{{repairPrice}}</label>元。</view>
+
+  </view>
+
+  <view class='summary'>
+    <view>此次租车中，共花费<label class='fontColor'>{{totalPrice}}</label>元，预授权<label class='fontColor'>300</label>元，若有剩余，将剩下的余额原路退回，否则进行差价补钱。</view>
+  </view>
+  
+  <button bindtap='complete'>{{tips}}</button>
+</view>

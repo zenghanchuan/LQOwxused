@@ -1,0 +1,15 @@
+<view class='login'>
+  <tips />
+  <view class='loginForm'>
+    <!-- <view class='phoneNum'>手机号</view> -->
+    <view class='form'>
+      <input class='myInput' type='number' maxlength="11" placeholder='请输入手机号' value='{{value}}' bindinput='change'></input>
+      <view class='point'>
+        <input class='verification' maxlength="6" placeholder='请输入验证码' value='{{number}}' bindinput='changeNum'></input>
+        <button class='sendOut' disabled="{{disabled}}" bindtap='handel'>{{btntext}}</button>
+        
+      </view>
+      <Button class='signIn' disabled='disabled' bindtap='signIn'>点击登录 立即用车</Button> 
+    </view>
+  </view>
+</view>

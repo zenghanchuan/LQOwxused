@@ -1,0 +1,37 @@
+.bikeInfo{
+  width: 690rpx;
+  height: 212rpx;
+  border-radius: 30rpx;
+  background-color: #37aa4a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:29rpx;
+  color: #fff;
+}
+.bikeName{
+  font-size: 32rpx;
+  display: block;
+  margin-bottom: 35rpx;
+  width:60%;
+  text-align:center;
+}
+.bikeDetail{
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bikeTime{
+  width: 486rpx;
+}
+.bikeDetailTop,
+.bikeDetailBotton{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}

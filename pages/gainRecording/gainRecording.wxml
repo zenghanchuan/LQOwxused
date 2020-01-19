@@ -1,0 +1,33 @@
+<view class="main">
+  <!-- <view class="section">
+    <picker class="header" mode="date" fields="month" value="{{date}}" start="2019-01" end="{{endDate}}" bindchange="bindDateChange">
+      <view class="picker">
+        选择年月: {{date}}
+      </view>
+      <image src='/assets/images/down.png'></image>
+    </picker>
+  </view> -->
+  <view class='table'>
+    <view class='tr bg-w'>
+      <view class='th'>姓名</view>
+      <view class='th'>总金额</view>
+      <view class='th'>销售收益</view>
+      <view class='th'>公司补贴</view>
+      <view class='th'>时间</view>
+    </view>
+    <view class='tr bg-g' wx:for="{{recordList}}" wx:key=" " wx:if='{{flag}}'>
+      <view class='td'>{{item.partnerName}}</view>
+      <view class='td'>{{item.todayIncome}}</view>
+      <view class='td'>{{item.asIncome}}</view>
+      <view class='td'>{{item.companySubsidies}}</view>
+      <view class='td'>{{item.createTime}}</view>
+    </view>
+    <view class='tr bg-g'wx:if='{{!flag}}'>
+      当月暂无收益记录
+    </view>
+  </view>
+</view>
+
+
+
+

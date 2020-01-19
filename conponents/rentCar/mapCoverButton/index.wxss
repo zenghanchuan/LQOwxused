@@ -1,0 +1,28 @@
+.mapCoverButton{
+  width: 526rpx;
+  height: 88rpx;
+  background-color: #37aa4a;
+  border-radius: 44rpx;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 26rpx;
+}
+.scanIcon{
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  left: 30%;
+}
+.scanText{
+  width:100%;
+  height:100%;
+}
+.scanText button{
+  color:white;
+  background-color:rgba(255,255,255,0);
+  font-size:26rpx;
+  width:100%;
+  height:100%;
+  line-height:88rpx;
+}

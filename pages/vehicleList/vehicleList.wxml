@@ -1,0 +1,19 @@
+<!--pages/vehicleList/vehicleList.wxml-->
+<view class='main'>
+  <text class='address'>{{address}}租车点所有车辆</text>
+  <text class='tips'>（绿色表示还未挪回的车）</text>
+  <!-- 车辆列表 未挪的标记为绿色 -->
+  <view class='info' wx:if="{{flag}}">暂无车辆信息</view>
+  <view class='list'>
+    <view wx:for="{{vehicleList}}" wx:key="{{index}}" data-index='{{index}}' bindtap='check_location' class='{{item.check==1?"check_view":""}}'>
+      <text class="num {{item.bikeState == 3?'color':''}} {{item.check==0?'':'check_color'}}">{{index + 1}}</text>
+      <text class="{{item.bikeState == 3?'color':''}} {{item.check==0?'':'check_color'}}">{{item.scanCode}}</text>
+      <text class="{{item.bikeState == 3 || item.bikeState == 4 ?'':'hide' }}  {{item.bikeState == 3?'color':''}} {{item.check==0?'':'check_color'}}">开锁地点:{{item.regionStart}} 关锁地点:{{item.regionEnd}}</text>
+      <text class="{{item.bikeState == 1 || item.bikeState == 2 ?'':'hide' }} {{item.check==0?'':'check_color'}}">骑行中</text>
+      <text class="{{item.bikeState == 0?'':'hide' }} {{item.check==0?'':'check_color'}}">未出库</text>
+      <text class='check_location {{item.check==0?"":"check_color"}}' wx:if="{{item.check==1}}">当前位置：{{item.address}}</text>
+    </view>
+
+    <view></view>
+  </view>
+</view>

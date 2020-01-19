@@ -1,0 +1,11 @@
+<!--pages/toPay/toPay.wxml-->
+<view class='main'>
+  <view ><text>您还需支付</text>{{residualPrice}}<text>元</text></view>
+  <myButton 
+    class="myButton"
+    buttonInfo = "立即支付"
+    bindtap = "topay"
+    >
+  </myButton>
+</view>
+

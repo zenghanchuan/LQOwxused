@@ -1,0 +1,14 @@
+<!--pages/explain/explain.wxml-->
+<scenicName scenicSpot = '{{scenicSpot}}'/>
+<explainImg />
+<view class='textDesc'>
+  <textDesc nearSpot = '{{nearSpot}}' />
+</view>
+<view>
+  <legalDocument bind:myeventUser='myeventUser' bind:myeventRental='myeventRental' />
+</view>
+<view>
+  <!-- <loginButton wx:if="{{show}}"/> -->
+  <loginButton dataReady='{{dataReady}}' /> 
+</view>
+<!-- <button class='shouquan' wx:if="{{canIUse && !show}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button> -->

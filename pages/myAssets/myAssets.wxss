@@ -1,0 +1,72 @@
+/* pages/myAssets/myAssets.wxss */
+.main{
+  width: 750rpx;
+  height: 100vh;
+  position: relative;
+}
+/* 没有收益 */
+.noIncome > image{
+  width: 500rpx;
+  height: 327rpx;
+  display: block;
+  margin: 30rpx auto;
+}
+.no_income{
+  width: 603rpx;
+  height: 232rpx;
+  margin: 0 auto;
+}
+.no_income .background{
+  width: 603rpx;
+  height: 245rpx;
+  position: absolute;
+}
+.no_income .text_income{
+  display:block;
+  text-align:center;
+  position:relative;
+  font-size:35rpx;
+  font-family: PingFang-SC-Bold;
+  color:rgb(255,255,255);
+  line-height: 245rpx;
+}
+/* 地图 */
+map{
+  width: 750rpx;
+  height: 100vh;
+}
+.income{
+  width: 490rpx;
+  height: 135rpx;
+  margin: 10rpx auto 0 auto;
+}
+.income .background{
+  width: 490rpx;
+  height: 135rpx;
+  position: absolute;
+}
+.text_income{
+  display:block;
+  padding-top: 7px;
+}
+.text_income text{
+  display:block;
+  text-align:center;
+  position:relative;
+  font-size:35rpx;
+  font-family: PingFang-SC-Bold;
+  color:rgb(255,255,255);
+  line-height: 50rpx;
+}
+button{
+  width: 390rpx;
+  height: 100rpx;
+  background: rgb(55,170,74);
+  line-height: 100rpx;
+  color: white;
+  font-size: 32rpx;
+  position: absolute;
+  bottom: 35rpx;
+  transform: translateX(-50%);
+  left: 50%;
+}

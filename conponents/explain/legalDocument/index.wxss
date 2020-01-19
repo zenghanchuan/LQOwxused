@@ -1,0 +1,29 @@
+/* conponents/explain/legalDocument/legalDocument.wxss */
+.main{
+  /* margin-left: 68rpx; */
+  margin: auto;
+  width: 600rpx;
+  height: 163rpx;
+  margin-bottom: 82rpx;
+}
+.main image{
+  width: 31rpx;
+  height: 31rpx;
+  margin-right: 9rpx;
+  float: left;
+}
+.main view view{
+  font-size: 22rpx;
+  line-height: 31rpx;
+  letter-spacing: 4rpx;
+  width: 560rpx;
+  margin-left: 40rpx;
+}
+.main > view:first-child{
+  height: 33rpx;
+  margin-bottom: 30rpx;
+}
+.documentName{
+  color: rgb(0,170,239);
+  display: inline;
+}

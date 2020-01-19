@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "explainImg":"/conponents/explain/explainImg/index",
+    "scenicName":"/conponents/explain/scenicName/index",
+    "textDesc": "/conponents/explain/textDesc/index",
+    "loginButton": "/conponents/explain/loginButton/index",
+    "legalDocument": "/conponents/explain/legalDocument/index"
+  },
+  "navigationBarTitleText": "来骑哦租车"
+}

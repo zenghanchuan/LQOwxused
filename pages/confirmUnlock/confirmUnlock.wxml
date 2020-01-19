@@ -1,0 +1,15 @@
+<!--pages/confirmUnlock/confirmUnlock.wxml-->
+<view class='main'>
+  <text>{{address}}租车点车辆</text>
+  <!-- 车辆列表 -->
+  <view class='info' wx:if="{{flag}}">暂无车辆信息</view>
+  <view class='list'>
+    <view wx:for="{{vehicleList}}" wx:key="{{index}}" bindtap='select_date' data-index='{{index}}'>
+      <image src='{{item.check==0? "/assets/images/unselected.png":"/assets/images/selected.png" }}'></image>
+      <text class='num {{item.check==0?"":"active"}}'>{{index + 1}}</text>
+      <text class='{{item.check==0?"":"active"}}'>{{item.scanCode}} 开锁地点:{{item.regionStart}}</text>
+    </view>
+  </view>
+  <!-- 确认开锁 -->
+  <view class='btn' bindtap='confirm'>确认开锁</view>
+</view>

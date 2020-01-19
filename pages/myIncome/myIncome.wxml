@@ -1,0 +1,67 @@
+<!--pages/myIncome/myIncome.wxml-->
+<view class='main'>
+  <image src='/assets/images/bike_income.png'></image>
+  <view class='center'>
+    <image class='background' src='/assets/images/6.png'></image>
+    
+    <view class='income {{mark?"":"income2"}} '>
+      <text class='text_des'>您的总提现</text>
+      <text class='text_income'>{{sum}}</text>
+    </view>
+
+    <view class='income_between' wx:if="{{mark}}"></view>
+
+     <view class='income' wx:if="{{mark}}">
+      <text class='text_des'>押金收益</text>
+      <text class='text_income'>{{deposit}}</text>
+    </view>
+
+    <view class='income_between'></view>
+
+    <view class='income {{mark?"":"income2"}} '>
+      <text class='text_des'>总收益余额</text>
+      <text class='text_income'>{{balance}}</text>
+    </view>
+    
+  </view>
+  <view class='record'>
+    <image src='/assets/images/whitebg.png'></image>
+    <view class='record_middle'>
+      <view>
+        <image src='/assets/images/success.png'></image>
+        <navigator url="/pages/successRecord/successRecord?parId={{parId}}">
+          <text>已成功提现记录</text>
+          <view></view>
+        </navigator>
+      </view>
+      <view>
+        <image src='/assets/images/wait.png'></image>
+        <navigator url="/pages/waitRecord/waitRecord?parId={{parId}}">
+          <text>等待提现</text>
+          <view></view>
+        </navigator>
+      </view>
+
+      <view>
+        <image src='/assets/images/gainRecording.png'></image>
+        <navigator url="/pages/gainRecording/gainRecording?parId={{parId}}">
+          <text>收益记录</text>
+          <view></view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <button bindtap='toCashWithdrawal'>收益提现</button>
+</view>
+<!-- 提现弹出框 -->
+<view class='putForwardTotastBg' hidden='{{TotastBg}}' bindtap='hiddenTotast'></view>
+<view class='putForwardTotast' hidden='{{Totast}}'>
+  <view class='title'>提现金额</view>
+  <view class='inpMoney'>
+    <label>￥</label>
+    <input type="number" placeholder='当前可提现为{{balance}}' placeholder-class="placeholderStyle" bindinput='formValue' value='{{value}}'></input>
+  </view>
+  <!-- 请输入大于100且为100的整数倍 -->
+  <text class='tips {{flag?"verification":"showVerification"}}'>{{Tips}}</text>
+  <button class='btn' disabled='{{flag}}' bindtap='submitMoney'>提现</button>
+</view>

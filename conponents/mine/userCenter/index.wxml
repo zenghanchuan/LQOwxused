@@ -1,0 +1,34 @@
+<!--conponents/mine/userCenter/index.wxml-->
+<view class='main'>
+  <view class='bottom'>
+    <view class='information'>
+      <image class='headPortrait' src='{{userInfo.avatarUrl}}'></image>
+      <text class='nickName'>{{userInfo.nickName}}</text>
+      <text class='phoneNumber'>{{phone}}</text>
+    </view>
+    <image src='../../.././assets/images/mineBox.png'></image>
+    <view class='menu'>
+      <view class='menu-item' catchtap='toDeposit'>
+        <image class='left' src='/assets/images/deposit.png'></image>
+        <text>预授权</text>
+        <image class='right' src='/assets/images/arrow.png'></image>
+      </view>
+      <view class='menu-item' bindtap='travelRecord'>
+        <image class='left' src='/assets/images/record.png' style='float:left;'></image>
+        <text>行程记录</text>
+        <image class='right' src='/assets/images/arrow.png'></image>
+      </view>
+      <view class='menu-item' bindtap='myincome'>
+        <image class='left' src='/assets/images/profit.png' style='width:36rpx;height:34rpx;margin: 36rpx 8rpx 0 4rpx ;float:left;'></image>
+        <text>我的收益</text>
+        <image class='right' src='/assets/images/arrow.png'></image>
+      </view>
+      <view class='menu-item' bindtap='myassets'>
+        <image class='left' src='/assets/images/assets.png' style='width:34rpx;height:34rpx;margin: 37rpx 8rpx 0 4rpx ;float:left;'></image>
+        <text>我的资产</text>
+        <image class='right' src='/assets/images/arrow.png'></image>
+      </view>
+    </view>
+  </view>
+  <image src='/assets/images/mineLogo.png'></image>
+</view>

@@ -1,0 +1,35 @@
+.main{
+  width: 100%;
+  height: 100%;
+}
+.section{
+  margin: 20rpx; 
+  line-height: 37rpx;
+  font-weight: bolder;
+  font-size: 37rpx; 
+}
+.picker{
+  float: left;
+}
+.section image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-left: 20rpx;
+}
+.list{
+  width: 85%;
+  margin: 20rpx auto;
+  color: white;
+  font-size: 30rpx;
+  background: rgb(55,170,74);
+  border-radius: 8px;
+}
+.list view {
+  padding: 20rpx;
+}
+.list view:last-child{
+  padding: 0 20rpx 20rpx 20rpx;
+}
+.list view:first-child text:last-child{
+  float: right;
+}

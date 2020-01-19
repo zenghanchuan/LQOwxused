@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "userCenter": "/conponents/mine/userCenter/index"
+  },
+  "navigationBarTitleText": "个人中心"
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mapCoverIcon": "/conponents/rentCar/mapCoverIcon/index",
+    "mapCoverButton": "/conponents/rentCar/mapCoverButton/index"
+  },
+  "navigationBarTitleText": "扫码租车"
+}

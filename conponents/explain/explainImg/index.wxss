@@ -1,0 +1,44 @@
+.explainImgBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tatolInfo{
+  width: 526rpx;
+  height: 344rpx;
+  position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.tatolInfo > image{
+  width: 526rpx;
+  height: 344rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.title{
+  position: absolute;
+  top: 206rpx;
+  left: 146rpx;
+  color: #fff;
+  font-size: 30rpx;
+}
+.desc{
+  position: absolute;
+  top: 273rpx;
+  left: 40rpx;
+  color: #fff;
+  font-size: 26rpx;
+}
+.circular{
+  display: inline-block;
+  width: 26rpx;
+  height: 26rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 7rpx;
+  vertical-align: middle;
+  margin-top:-5rpx;
+}

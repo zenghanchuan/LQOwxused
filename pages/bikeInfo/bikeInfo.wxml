@@ -1,0 +1,22 @@
+<!--pages/bikeInfo/bikeInfo.wxml-->
+<view class="main">
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        当前选择：{{array[index]}}
+      </view>
+      <image src='/assets/images/down.png'></image>
+    </picker>
+  </view>
+
+  <view class="list"  wx:for="{{bikeSort.datas}}" wx:key="index">
+    <view>
+      <text>车辆#{{index + 1}}</text>
+      <text>收益{{item.income == undefined ? 0 : item.income}}元</text>
+    </view>
+    <view>
+      <text>车辆位置：{{item.location}}</text>
+    </view>
+  </view>
+
+</view>

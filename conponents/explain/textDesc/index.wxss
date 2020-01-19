@@ -1,0 +1,26 @@
+.textDescTitle{
+  font-size: 24rpx;
+  line-height: 41rpx;
+}
+.titleIcon{
+  display: inline-block;
+  width: 24rpx;
+  height: 24rpx;
+  background-color: #37aa4a;
+  border-radius: 50%;
+  line-height: 24rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 20rpx;
+  margin-right: 5rpx;
+}
+.textDescItem{
+  font-size: 24rpx;
+  line-height: 41rpx;
+}
+.postageTitle{
+  color: #37aa4a;
+}
+.textDescItem text{
+  color: #37aa4a;
+}

@@ -1,0 +1,49 @@
+/* pages/myRecord/myRecord.wxss */
+.main{
+  padding: 20rpx 30rpx
+}
+.menu{
+  /* height: 210rpx; */
+  border-top: 1rpx solid #c3c3c3;
+  overflow: hidden;
+}
+.menu .left{
+  width: 80%;
+  padding: 30rpx 0 0 0;
+  float: left;
+}
+.menu .left .t1{
+  font-size: 26rpx;
+  color: #333333;
+  margin-bottom: 30rpx;
+  display: block;
+}
+.menu .left .t2{
+  font-size: 26rpx;
+  color: #666666;
+  margin-bottom: 25rpx;
+  display: block;
+  width: 123%;
+}
+.compensate text:last-child{
+  margin: 0 0 0 30rpx;
+}
+.menu .left > text:last-child > text:last-child{
+  margin: 0 0 0 30rpx;
+}
+.menu .right{
+  width: 15%;
+  float: left;
+  padding: 50rpx 0 0 20rpx;
+}
+.menu .right text{
+  font-size: 26rpx;
+  color: #333333
+}
+.main .t3{
+  font-size: 28rpx;
+  color: #666666;
+  display: block;
+  text-align: center;
+  margin-top: 30rpx;
+}

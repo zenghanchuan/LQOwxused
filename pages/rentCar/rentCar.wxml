@@ -1,0 +1,55 @@
+<view class='mapBox'>
+  <map 
+    id='myMap'
+    longitude='{{longitude}}'
+    latitude='{{latitude}}'
+    markers='{{markers}}'
+    show-location="{{showLocation}}"
+    enable-zoom = "{{enableZoom}}"
+    polyline ="{{polyline}}"
+    bindmarkertap="markertap"
+  >
+      
+    <mapCoverIcon bind:myevent='onCheck' bindreset="toReset"/>
+    <mapCoverButton bind:onCheck='onCheck' wx:if='{{flag}}'/>
+
+  </map>
+
+  <!-- 跳转按钮功能 -->
+  <cover-view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showBubble}}"></cover-view>
+  <!-- 按钮 -->
+  <cover-view class='jumpTo' bindtap="jumpBtn">
+    <cover-image class="jumpImg" src='/assets/images/jumpTo.png'></cover-image>
+  </cover-view>
+  <!-- 气泡 -->
+  <cover-view class="jumpModal" wx:if="{{showBubble}}">
+    <cover-image class="jumpImg" src='/assets/images/bubble.png'></cover-image>
+    <!-- 跳转选项 -->
+    <cover-view class="jumpSelect">
+      <cover-view wx:for="{{jumpData}}" wx:key=" " bindtap="selectBtn" data-index='{{index}}'>
+        <cover-view class="selectList">
+          <cover-image class="listImg" style="height:{{item.imgHeight}}rpx;" src='{{item.imgUrl}}'></cover-image>
+          <cover-view>{{item.name}}</cover-view>
+        </cover-view>
+        <cover-view class="listBorder" wx:if="{{item.isBodor}}"></cover-view>
+      </cover-view>
+    </cover-view>
+  </cover-view>
+
+  <!-- 登录弹窗 -->
+  <cover-view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></cover-view>
+  <cover-view class="modal-dialog" wx:if="{{showModal}}">
+    <cover-view class="modal-title">您还未登录</cover-view>
+    <cover-view class="modal-content">
+      <cover-view class="modal-content">请先登录,再进行操作！</cover-view>
+    </cover-view>
+    <cover-view class="modal-footer">
+      <cover-view class="btn-cancel" data-status="cancel">
+        <button bindtap="onCancel" >取消</button>
+      </cover-view>
+      <cover-view class="btn-confirm" data-status="confirm">
+        <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" >授权登录</button>
+      </cover-view>
+    </cover-view>
+  </cover-view>
+</view>

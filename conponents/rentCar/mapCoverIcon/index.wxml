@@ -1,0 +1,7 @@
+<cover-view class='iconContainer'>
+  <cover-image class='admin iconBox' src='/assets/images/admin.png' wx:if="{{adminShow}}" catchtap='toAdmin'></cover-image>
+  <cover-image class='customerService iconBox' src='/assets/images/kefu.png' catchtap='telephoneNumber'></cover-image>
+  <cover-image class='user iconBox' src='/assets/images/user.png' catchtap='toUserCenter'></cover-image>
+  <cover-image class='position iconBox' src='/assets/images/position.png' bindtap='toReset'></cover-image>
+  <cover-image class='Navigation iconBox' src='/assets/images/navigation.png' bindtap='toPeriphery'></cover-image>
+</cover-view>

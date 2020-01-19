@@ -1,0 +1,20 @@
+.textDesc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 215rpx;
+  width: 750rpx;
+}
+.shouquan{
+  width: 526rpx;
+  height: 88rpx;
+  font-size: 26rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'PingFang-SC-Bold';
+  border-radius: 44rpx;
+  background-color: #37aa4a;
+  margin-top: 88rpx;
+}

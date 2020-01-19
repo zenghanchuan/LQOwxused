@@ -1,0 +1,35 @@
+/* pages/rideEnd/rideEnd.wxss */
+.main image{
+  width: 400rpx;
+  height: 250rpx;
+  margin: 95rpx auto 0 auto;
+  display: block;
+}
+.rideInfo > view > view{
+  display: inline;
+}
+.rideInfo, .compensateInfo, .summary{
+  font-size: 26rpx;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin: 120rpx 60rpx 0 60rpx;
+  line-height: 45rpx;
+}
+.compensateInfo, .summary{
+  margin: 50rpx 60rpx 0 60rpx;
+}
+.main button{
+  width: 526rpx;
+  height: 88rpx;
+  background: rgb(55,170,74);
+  font-size: 35rpx;
+  color: rgb(255, 255, 255);
+  border-radius: 88rpx;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 98rpx;
+}
+.fontColor{
+  color: rgb(55, 170, 74);
+}

@@ -1,0 +1,4 @@
+<cover-view class='mapCoverButton' catchtap='scanCode'>
+  <cover-image class='scanIcon' src='/assets/images/scan.png'></cover-image>
+  <cover-view class='scanText'> <button disabled='{{disabled}}'>扫码租车</button> </cover-view>
+</cover-view>

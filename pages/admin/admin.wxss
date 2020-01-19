@@ -1,0 +1,17 @@
+/* pages/admin/admin.wxss */
+.main view{
+  width: 551rpx;
+  height: 215rpx;
+  background: #37aa4a;
+  border-radius: 47rpx;
+  line-height: 215rpx;
+  text-align: center;
+  font-size: 45rpx;
+  color: #ffffff;
+}
+.main view:first-child{
+  margin: 165rpx auto 0 auto;
+}
+.main view:last-child{
+  margin: 68rpx auto 0 auto; 
+}

@@ -1,0 +1,11 @@
+.myButton{
+  width: 551rpx;
+  height: 88rpx;
+  background-color: #37aa4a;
+  border-radius: 44rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 26rpx;
+}

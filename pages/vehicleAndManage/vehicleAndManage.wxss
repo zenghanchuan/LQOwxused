@@ -1,0 +1,15 @@
+/* pages/vehicleAndManage/vehicleAndManage.wxss */
+.main view{
+  width: 552rpx;
+  height: 215rpx;
+  background: #37aa4a;
+  border-radius: 47rpx;
+  margin: 44rpx  auto 0 auto;
+  line-height: 215rpx;
+  text-align: center;
+  font-size: 45rpx;
+  color: #ffffff;
+}
+.main view:first-child{
+  margin: 108rpx auto 0 auto;
+}

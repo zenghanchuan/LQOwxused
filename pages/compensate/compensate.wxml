@@ -1,0 +1,30 @@
+<view>
+  <text class='carTest'>请选择损坏类型</text>
+</view>
+<view class='wrap'>
+  <view class='checkbox-con'>
+    <checkbox-group bindchange="checkboxChange">
+      <label wx:if="{{judge}}" class="{{item.checked?'checkbox checked':'checkbox'}}" wx:for="{{checkboxArr}}" bindtap='checkbox' data-index="{{index}}" wx:key="item.name">
+        <checkbox value="{{item.price}}" name="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+        <view class='test'>{{item.text}}</view>
+      </label>
+
+      <label wx:if="{{!judge}}" class="{{item.checked?'checkbox checked':'checkbox'}}" wx:for="{{checkboxArry}}" bindtap='checkbox' data-index="{{index}}" wx:key="item.name">
+        <checkbox value="{{item.price}}" name="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+        <view class='test'>{{item.text}}</view>
+      </label>
+
+    </checkbox-group>
+  </view>
+</view>
+<view >
+  <image class='camera {{flag?"chose":""}}' src='/assets/images/camera.png'></image>
+  <!-- <camera device-position="back" flash="off" binderror="error" style="width: 80rpx; height: 80rpx;"></camera> -->
+</view>
+<textarea class='other {{flag?"chose":""}}' placeholder='请简要描述车辆损坏情况。。。' value='{{content}}' bindinput='changeContent'>
+</textarea>
+<textarea class='other {{flag?"chose":""}}' placeholder='请输入需赔偿金额。。。' value='{{val}}' bindinput='handel'>
+</textarea>
+<view>
+  <button class='submit' bindtap='submit'>赔偿金额:￥{{money}}</button>
+</view>

@@ -1,0 +1,10 @@
+<view class='explainImgBox' wx:if="{{dataReady}}">
+  <view class='tatolInfo'>
+    <image src='/assets/images/explainImg.png'></image>
+    <text class='title'>可选以下计费方式</text>
+    <view class='desc'>
+      <text class='circular'></text>
+      <text class='detailDesc'>{{cost}}</text>
+    </view>
+  </view>
+</view>

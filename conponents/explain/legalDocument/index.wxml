@@ -1,0 +1,11 @@
+<!--conponents/explain/legalDocument/legalDocument.wxml-->
+<view class="main">
+  <view bindtap="clickUser">
+    <image src='{{userService ? "/assets/images/selected.png" : "/assets/images/unselected.png"}}'></image>
+    <view>勾选则代表您已同意<navigator class="documentName" url="/pages/agreement/agreement?name=用户服务协议&index=0">《用户服务协议》</navigator><navigator class="documentName" url="/pages/agreement/agreement?name=隐私协议&index=1">《隐私协议》</navigator></view>
+  </view>
+  <view bindtap="clickRental">
+    <image src='{{rental ? "/assets/images/selected.png" : "/assets/images/unselected.png"}}'></image>
+    <view>若要开始使用来骑哦出行小程序，请先勾选本项协议，勾选后则代表您已同意本项<navigator class="documentName" url="/pages/agreement/agreement?name=租赁安全责任协议&index=2">《租赁安全责任协议》</navigator>的说明。</view>
+  </view>
+</view>

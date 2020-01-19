@@ -1,0 +1,21 @@
+.bikeScanBtn{
+  width: 315rpx;
+  height: 88rpx;
+  display: flex;
+  border-radius: 44rpx;
+  float: left;
+}
+.bikeScan{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 34rpx;
+  background-color: #37aa4a;
+}
+.scanCode{
+  margin-right: 12rpx;
+  width: 52rpx;
+  height: 32rpx;
+}

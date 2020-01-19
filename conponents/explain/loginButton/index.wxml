@@ -1,0 +1,3 @@
+<!-- <button disabled="{{dataReady}}" bindtap="goRentCar" open-type='getUserInfo'>点击登录 立即用车</button> -->
+<button disabled="{{dataReady}}" bindtap="goRentCar">立即进入</button>
+ 

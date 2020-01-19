@@ -1,0 +1,11 @@
+.my-input{
+  width: 551rpx;
+  height: 88rpx;
+  border-radius: 44rpx;
+  box-sizing: border-box;
+  padding-left: 40rpx;
+  display: flex;
+  border: 1px solid #7e7e7e;
+  font-size: 24rpx;
+  color: rgba(50, 50, 50)
+}

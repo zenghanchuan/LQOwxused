@@ -1,0 +1,23 @@
+<view class='riding'>
+  <map
+    id='myMap'
+    longitude='{{longitude}}'
+    latitude='{{latitude}}'
+    markers='{{markers}}'
+  >
+    <!-- <bikeInfo /> -->
+    <bikeInfo default-code="{{code}}" default-status="{{status}}"/>
+    <mapCoverIcon />
+
+    <!-- <view class='footer'>
+      显示
+      <bikeScanBtn class="scanBtn" wx:if="{{flag}}"/>
+      <bikeFunctionBtn class="functionBtn" comment='{{sign}}' />
+    </view> -->
+    
+  </map> 
+  <view class='footer' wx:if='{{mark}}'>
+    <bikeScanBtn class="scanBtn" wx:if="{{flag}}"/>
+    <bikeFunctionBtn class="functionBtn" comment='{{sign}}' />
+  </view>
+</view>

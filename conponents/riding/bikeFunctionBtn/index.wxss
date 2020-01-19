@@ -1,0 +1,35 @@
+.bikeFunctionBtn{
+  left: 112rpx;
+  bottom: 90rpx;
+  width: 526rpx;
+  height: 88rpx;
+  display: flex;
+  border-radius: 44rpx;
+  background: yellow;
+}
+.bikeStatus{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 34rpx;
+}
+.bikeStatus{
+  background-color: #37aa4a;
+}
+.returnBike{
+  margin-right: 12rpx;
+}
+
+.returnBike{
+  width: 52rpx;
+  height: 32rpx;
+}
+.zlcBike{
+  width: 315rpx;
+  float:right;
+}
+.ddcBike{
+  margin: 0 auto;
+}

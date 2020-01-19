@@ -1,0 +1,12 @@
+<!--pages/vehicleAndManage/vehicleAndManage.wxml-->
+<view class='main'>
+  <view bindtap='confirmUnlock'>确认开锁
+    <!-- <navigator url=''></navigator> -->
+  </view>
+  <view bindtap='carPark'>挪车
+    <!-- <navigator url=''></navigator> -->
+  </view>
+  <view bindtap='vehicleList'>车辆管理列表
+    <!-- <navigator url=''></navigator> -->
+  </view>
+</view>
